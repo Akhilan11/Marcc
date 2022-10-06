@@ -15,6 +15,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
   <link rel="stylesheet" href="counter.css">
 
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>  
 </head>
@@ -116,16 +122,16 @@ background: linear-gradient(to left, #48CBE4, #E5E5E5);" >
 
 <!-- Introduction -->
 <br><br>
-<center><img src="Image/Introduction.jpg" class="img-fluid"></center>
+<center><img src="Image/Introduction.jpg" class="img-fluid" data-aos="fade-right"></center>
 <div class="container"><hr></div>
 
 
 <!-- why us -->
 <br><br>
-<center><img src="Image/why.jpg" class="img-fluid"></center>
+<center><img src="Image/why.jpg" class="img-fluid" data-aos="fade-left"></center>
 
 <!-- Counter -->
-<div class="container">
+<div class="container" data-aos="flip-up">
   <div class="wrapper">
         <div class="container1">  
           <span class="num" data-val="10000" style="font-family: monospace;">000</span><center><hr style="width: 50%; "></center>
@@ -183,7 +189,7 @@ background: linear-gradient(to left, #48CBE4, #E5E5E5);" >
 <!-- <center><img src="Image/about.png" class="img-fluid"></center> -->
 
 <!-- Treatments -->
-<div class="treatments">
+<div class="treatments" data-aos="fade-left">
   <div class="container">
   <p class="float-left display-1" style="margin-top: 1em;font-size: 55px;font-family: fantasy;color: #212d40;">Treatments <i class="bi bi-play-fill" style="color: #212d40;"></i></p>
   
@@ -304,7 +310,7 @@ background: linear-gradient(to left, #48CBE4, #E5E5E5);" >
 </div>
 
 <!-- Babyy -->
-<div class="baby">
+<div class="baby" data-aos="fade-right">
   <div class="container">
     <p class="float-left display-1" style="margin-top: 1em;font-size: 55px;font-family: fantasy;color: #212d40;"> Cute Miracles <i class="bi bi-play-fill" style="color: #212d40;"></i></p>
   
@@ -434,4 +440,8 @@ background: linear-gradient(to left, #48CBE4, #E5E5E5);" >
       }
     }, duration);
   });
+</script>
+
+<script>
+  AOS.init();
 </script>

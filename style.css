@@ -1,0 +1,21 @@
+/* width */
+::-webkit-scrollbar {
+width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #ccc; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #333; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #151515; 
+}
+
+html, body { overflow-x: hidden; }
